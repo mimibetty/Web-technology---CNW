@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    table {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <table border="0" name="f1">
+    <caption>Login</caption>
+    <tr>
+      <td>Username</td>
+      <td>
+        <input type="text" name="user"><br>
+      </td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td>
+        <input type="password" name="pass"><br>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button type="button" onclick="checkLogin()">OK</button>
+        <button type="reset">Reset</button>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    function checkLogin() {
+
+      var username = document.getElementsByName("user")[0].value;
+      var password = document.getElementsByName("pass")[0].value;
+
+      if (username === "" || password === "") {
+        alert("Vui lòng nhập username và password.");
+      }
+    }
+  </script>
+</body>
+</html>

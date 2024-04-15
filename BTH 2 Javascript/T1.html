@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flash Text</title>
+  <style>
+    .flash-text {
+      font-family: "Arial", sans-serif;
+      font-size: 50px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: flash 5s linear infinite;
+    }
+
+    @keyframes flash {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="flash-text">Nguyễn Thanh Minh</div>
+</body>
+</html>

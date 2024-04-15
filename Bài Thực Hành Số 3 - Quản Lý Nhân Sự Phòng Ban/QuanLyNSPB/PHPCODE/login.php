@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #00C1FF;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .form-group input[type="submit"],
+        .form-group input[type="button"] {
+            padding: 8px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #fff;
+            color: #00C1FF;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover,
+        .form-group input[type="button"]:hover {
+            background-color: #ddd;
+        }
+
+        .error-message {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="xulilogin.php" name="f1" method="POST">
+            <div class="form-group">
+                <label for="txtUserName">Username</label>
+                <input type="text" name="txtUserName" id="txtUserName">
+            </div>
+            <div class="form-group">
+                <label for="txtPassword">Password</label>
+                <input type="password" name="txtPassword" id="txtPassword">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="OK" onclick="check()">
+                <input type="button" name="butReset" value="Reset" onclick="reset()">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    function check() {
+        var tendn = document.f1.txtUserName.value
+        var password = document.f1.txtPassword.value
+        if (tendn == "") {
+            window.alert("Chưa nhập tên đăng nhập!")
+        } else if (password == "") {
+            window.alert("Chưa nhập mật khẩu!")
+        }
+    }
+
+    function reset() {
+        document.getElementById("txtUserName").value = "";
+        document.getElementById("txtPassword").value = "";
+    }
+</script>

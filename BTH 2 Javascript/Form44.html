@@ -1,0 +1,27 @@
+
+<script language="javascript">
+    function xiao() {
+        var x = document.f1.t1.value;
+        var num = Number(x);
+        var selectBox = document.f1.Box; 
+        // var selectedOptionValue = selectBox.value; // This is a string
+        // var selectedOptionIndex = selectBox.selectedIndex; // This is a number
+        selectBox.selectedIndex = num;
+        document.f1.Box.selectedIndex = num;
+        
+    }
+</script>
+<body>
+    <form name="f1">
+        <select name="Box">
+            <option value="index0">index0</option>
+            <option value="index1">index1</option>
+            <option value="index2">index2</option>
+            <option value="index3">index3</option>
+        </select>
+        <input type="button" name="but1" value="ok" onclick="xiao()">
+        <input type="text" name="t1" value="chạy ngay đi">
+
+    </form>
+
+</body>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .taskbar {
+      background-color: #f2f2f2;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .taskbar a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+    }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.header img {
+  height: 80px;
+}
+
+.header input {
+  height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: -10px; /* Điều chỉnh margin-left âm để lệch qua bên trái */
+}
+
+ .container {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      height: 100vh; /* Đặt chiều cao của frameset */
+    }
+    
+    .frame {
+      border: none;
+      height: 100%;
+      width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="ff.png" alt="Logo">
+  <input type="text" placeholder="Tìm kiếm">
+</div>
+
+
+
+ <div class="taskbar">
+    <a href="Form3.html">Home</a>
+    <a href="Form3.html">Giới thiệu</a>
+    <a href="Form3.html">Tuyển sinh</a>
+    <a href="Form3.html">Đào tạo</a>
+    <a href="Form3.html">Nghiên cứu khoa học</a>
+    <a href="Form3.html">Hợp tác</a>
+    <a href="Form3.html">Sinh viên</a>
+
+
+  </div>
+
+
+  <div class="container">
+    <iframe class="frame" src="table1.html"></iframe>
+    <iframe class="frame" src="table2.html"></iframe>
+  </div>
+</body>
+</html>

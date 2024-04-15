@@ -1,0 +1,48 @@
+
+
+<script language="javascript">
+    // function UpDownCase() {
+    //     var x = document.f1.t1.value;
+    //     var y = document.f1.t2;
+        
+    //     var a = "";
+    //     for (let i = 0; i < x.length; i++) {
+    //       if (x[i] >= 'A' && x[i] <= 'Z') {
+    //         a += x[i].toLowerCase();
+    //       } 
+    //       if (x[i] >= 'a' && x[i] <= 'z') {
+    //         a += x[i].toUpperCase();
+    //       }
+    //     }
+    //     y.value = a;
+    // }
+
+    function UpDownCase() {
+        var x = document.f1.t1.value;
+        var y = document.f1.t2;
+        
+        var a = "";
+        for (let i = 0; i < x.length; i++) {
+            var charCode = x.charCodeAt(i);
+            if (charCode >= 65 && charCode <= 90) { // A-Z
+                a += String.fromCharCode(charCode + 32); // convert to lowercase
+            } 
+            else if (charCode >= 97 && charCode <= 122) { // a-z
+                a += String.fromCharCode(charCode - 32); // convert to uppercase
+            } 
+            else {
+                a += x[i]; // if it's a non-alphabet character, leave it as is
+            }
+        }
+        y.value = a;
+        alert("cach2")
+    }
+</script>
+
+<body onload="document.f1.t1.focus()">
+    <form name="f1">
+        <input type="text" name="t1" onblur="UpDownCase()"><br>
+        <input type="text" name="t2">
+    </form>    
+
+</body>

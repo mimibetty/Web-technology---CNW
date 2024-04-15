@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<head> 
+  <meta charset="UTF-8">
+</head>
+
+
+<html>
+<body>
+
+<ul>
+  <li><a href="Controller/C_PhongBan.php?xempb=1" target="T3"> Xem thông tin phòng ban</a></li>
+  <li><a href="Controller/C_NhanVien.php?xemnv=1" target="T3"> Xem thông tin nhân viên</a></li>
+  <li><a href="Controller/C_NhanVien.php?mod3=1" target="T3"> Tìm kiếm nhân viên</a></li>  
+</ul>
+
+<div style="text-align: right;">
+        <a href="Controller/C_Login.php?" onclick="changeContent(event)">
+            Đăng nhập
+        </a>
+</div>
+
+</body>
+</html>
+
+
+<script>
+    function changeContent(event) {
+        event.preventDefault();
+        var url = event.target.getAttribute('href');
+        parent.T3.location.href = url;
+    }
+</script>

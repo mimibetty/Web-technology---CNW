@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flash Text</title>
+  <style>
+    .flash-text {
+      font-family: "Arial", sans-serif;
+      font-size: 50px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: flash 8s linear infinite;
+    }
+
+    @keyframes flash {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="flash-text">102210067 21TCLC_DT1  Nguyễn Thanh Minh</div>
+</body>
+
+
+</html>

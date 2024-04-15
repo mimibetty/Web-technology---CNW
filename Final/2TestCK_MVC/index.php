@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Index MVC_EXAMPLE </title>
+        <meta charset="utf-8">
+    </head>
+    <body style="font-size: 150%">
+        <h1> Minh họa chức năng MVC </h1>
+        <hr>
+        <h2> Các chức năng hệ thống </h2>
+        <ul>
+           <!--  <li> 
+                <a href='Controller/C_Student.php?mod1=view'> Xem thông tin sinh viên </a>
+            </li>
+            <li> 
+                <a href='Controller/C_Student.php?mod2=search'> Tìm kiếm thông tin sinh viên </a>
+            </li>
+            <li> 
+                <a href='Controller/C_Student.php?mod3=insert'> Thêm sinh viên </a>
+            </li>
+            <li> 
+                <a href='Controller/C_Student.php?mod4=delete'> Xóa sinh viên </a>
+            </li>
+            <li> 
+                <a href='Controller/C_Student.php?mod5=update'> Cập nhật thông tin sinh viên </a>
+            </li>
+            <li> 
+                <a href='Controller/C_Student.php?mod0=main'> Main Page </a>
+            </li> -->
+
+            <a href='View/login.php'> Main Page </a>
+        
+        </ul>
+        <hr>
+    </body>
+</html>

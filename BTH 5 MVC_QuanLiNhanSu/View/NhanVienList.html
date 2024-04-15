@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>MVC_EXAMPLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Danh sách nhân viên:</h2>
+    <table>
+        <tr>
+            <th>IDNV</th>
+            <th>Họ Tên</th>
+            <th>IDPB</th>
+            <th>Địa chỉ</th>
+        </tr>
+        <?php
+    $cnt = 0;
+    for ($i = 0; $i < sizeof($staffList); $i++) {
+        echo "<tr>";
+        echo "<td>" . $staffList[$i]->id . "</td>";
+        echo "<td>" . $staffList[$i]->name . "</a></td>";
+        echo "<td>" . $staffList[$i]->idpb . "</td>";
+        echo "<td>" . $staffList[$i]->address . "</td>";
+        echo "</tr>";
+      
+    }
+    ?>
+    </table>
+
+    <p><a href="http://localhost/MVC_Quanlinhansu/index.html">Quay lại trang chủ</a></p>
+</body>
+
+</html>

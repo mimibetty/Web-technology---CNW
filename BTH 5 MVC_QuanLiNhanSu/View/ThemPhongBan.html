@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center>
+        <h1>Thêm phòng ban</h1>
+        <form action="../Controller/C_PhongBan.php" method="POST">
+            <table>
+                <tr>
+                    <td>ID Phòng ban: </td>
+                    <td><input type="text" name="IDPB"></td>
+                </tr>
+                <tr>
+                    <td>Tên phòng ban: </td>
+                    <td><input type="text" name="TenPB"></td>
+                </tr>
+                <tr>
+                    <td>Mô tả: </td>
+                    <td><input type="text" name="MotaPB"></td>
+                </tr>
+            </table>
+            <input type="submit" name="themphongban" value="Thêm">
+        </form>
+    </center>
+</body>
+
+</html>

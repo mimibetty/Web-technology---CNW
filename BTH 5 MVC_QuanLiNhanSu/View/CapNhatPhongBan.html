@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>MVC_EXAMPLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Danh sách phòng ban:</h2>
+    <table>
+        <tr>
+            <th>IDPB</th>
+            <th>Tên phòng ban</th>
+            <th>Mô tả</th>
+            <th>Cập nhật</th>
+        </tr>
+        <?php
+        for ($i = 0; $i < sizeof($PBList); $i++) {
+            echo '<tr>
+                <td>'.$PBList[$i]->id.'</td>
+                <td>'.$PBList[$i]->name.'</td>
+                <td>'.$PBList[$i]->mota.'</td> 
+                <td><a href="../Controller/C_PhongBan.php?updateID=' . $PBList[$i]->id . '">Cập nhật</a></td>
+            </tr>';
+        }
+    ?>
+    </table>
+
+    <p><a href="http://localhost/MVC_Quanlinhansu/index.html">Quay lại trang chủ</a></p>
+</body>
+
+</html>

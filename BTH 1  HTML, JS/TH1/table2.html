@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table</title>
+  <style>
+    .table-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* Đặt chiều cao của bảng */
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin: 0; /* Xóa khoảng cách giữa các hàng */
+    }
+
+    .cell {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .cell img {
+      max-width: 15%; /* Thu nhỏ kích thước ảnh chỉ còn một nửa */
+      height: auto; /* Đảm bảo tỷ lệ khung hình */
+    }
+
+    .caption {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="table-container">
+    <div class="caption">Khoa công nghệ thông tin - Tin tức</div>
+    <div class="row">
+      <div class="cell">
+        <img src="http://dut.udn.vn/Files/admin/images/Tin_tuc/KHCN_HTQT/2023/LEX6/image000.jpg" alt="Hình ảnh">
+        <span>Tin tức 1</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell">
+        <img src="http://dut.udn.vn/Files/admin/images/Tin_tuc/KhoaXDTLTD/2023/NhatBan/image000.jpg" alt="Hình ảnh">
+        <span>Tin tức 2</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell">
+        <img src="http://dut.udn.vn/Files/admin/images/Tin_tuc/Daotao/2023/LetraobangD2/image000.jpg" alt="Hình ảnh">
+        <span>Tin 3</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

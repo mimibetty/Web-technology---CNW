@@ -1,0 +1,53 @@
+
+<script language="javascript">
+    function Addprice(amount) {
+        with(this) {
+            price += amount;
+            author = author + "okbro";
+        }
+    }
+    function Book(title, author,content) {
+        this.title = title;
+        this.author = author;
+        this.content = content;
+        this.price = 0;
+        this.Addprice = Addprice;
+    }
+    function Animal() {
+        this.name = "tiger";
+        this.price = 0;
+        this.author = "hoicham";
+        this.Addprice = Addprice;
+    }
+</script>
+
+<body>
+    <script language="javascript">
+        var Book1 = new Book("java", "sun", "oop");
+        var Book2 = new Book("hello kitty", "moon", "codeforce");
+
+        Book1.Addprice(500);
+        Book1.Addprice(500);
+        document.writeln("book1 title is : " + Book1.title + "<br>");
+        document.writeln("book1 author is : " + Book1.author + "<br>");
+        document.writeln("book1 content is : " + Book1.content + "<br>");
+        document.writeln("book1 price is : " + Book1.price + "<br>" + "<br>");
+
+
+
+        Book2.Addprice(3);
+        Book2.Addprice(700);
+        document.writeln("book2 title is : " + Book2.title + "<br>");
+        document.writeln("book2 author is : " + Book2.author + "<br>");
+        document.writeln("book2 content is : " + Book2.content + "<br>");
+        document.writeln("book2 price is : " + Book2.price + "<br>");
+
+        var tiger = new Animal();
+        tiger.Addprice(700);
+        document.writeln("Tiger name is : " + tiger.author + "<br>");
+
+        document.writeln("Tiger name is : " + tiger.name + "<br>");
+        document.writeln("Tiger price is : " + tiger.price + "<br>");
+        
+    </script>
+</body>

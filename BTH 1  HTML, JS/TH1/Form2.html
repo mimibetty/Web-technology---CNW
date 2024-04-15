@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form2 hihi</title>
+<style>
+  body {
+    background-color: lightblue; /* Chuyển màu nền sang màu xanh dương nhạt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  table {
+    text-align: right;
+  }
+
+  /* Làm cho kích thước chữ to ra và có màu đỏ */
+  caption {
+    color: red;
+    font-size: 1.5em;
+     transform: translateY(-20px);
+  }
+
+  /* Làm cho radio button và check box thẳng hàng */
+  .aligned {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Thêm class mới để làm cho các input thẳng hàng */
+  .input-row {
+    display: flex;
+    align-items: center;
+  }
+
+</style>
+</head>
+<body>
+
+<table border="0">
+    <caption> Ví dụ về tạo form </caption>
+    <tr>
+      <td class="aligned">Text box</td>
+      <td>
+        <form class="input-row">
+          <input type="text" id="fname" name="fname">
+        </form>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="aligned">Text Area</td>
+      <td>
+        <form class="input-row">
+          <input type="number">
+        </form>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="aligned">File Box</td>
+      <td>
+        <form class="input-row">
+            <input type="text" id="tb" name="tb">
+            <input type="file" id="file" name="file">
+        </form>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="aligned">  <!-- Sử dụng lớp "aligned" -->
+        <input type="Radio">Radio Button
+      </td>
+    </tr>
+
+    <tr>
+      <td class="aligned">  <!-- Sử dụng lớp "aligned" -->
+        <input type="Checkbox">Reset
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <button type="button">Submit</button>
+        <button type="button">Reset</button>
+      </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

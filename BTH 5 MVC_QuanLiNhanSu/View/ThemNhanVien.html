@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center>
+        <h1>Thêm nhân viên</h1>
+        <form action="../Controller/C_NhanVien.php" method="POST">
+            <table>
+                <tr>
+                    <td>ID Nhân viên: </td>
+                    <td><input type="text" name="IDNV"></td>
+                </tr>
+                <tr>
+                    <td>Họ tên: </td>
+                    <td><input type="text" name="Hoten"></td>
+                </tr>
+                <tr>
+                    <td>ID Phòng ban: </td>
+                    <td><input type="text" name="IDPB"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ: </td>
+                    <td><input type="text" name="Diachi"></td>
+                </tr>
+            </table>
+            <input type="submit" name="themnhanvien" value="Thêm">
+        </form>
+    </center>
+    <p><a href="http://localhost/MVC_Quanlinhansu/index.html">Quay lại trang chủ</a></p>
+</body>
+
+</html>

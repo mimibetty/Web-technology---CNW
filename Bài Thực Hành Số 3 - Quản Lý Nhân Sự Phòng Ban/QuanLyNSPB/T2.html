@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<head> 
+  <meta charset="UTF-8">
+</head>
+
+
+<html>
+<body>
+
+<ul>
+  <li><a href="PHPCODE/xemThongTinNV.php" target="T3"> Xem thông tin nhân viên</a></li>
+  <li><a href='PHPCODE/xemThongTinPB.php' target="T3"> Xem thông tin phòng ban</a></li>
+  <li><a href='PHPCODE/timkiemnhanvien.php' target="T3"> Tìm kiếm nhân viên</a></li>
+
+<!--   <li><a href="Form22.html" target="T3"> Tìm kiếm</a></li>
+  <li><a href="Form33.html" target="T3"> Mục 3</a></li>
+  <li><a href="Form44.html" target="T3"> Mục 4</a></li>
+  <li><a href="Form55.html" target="T3"> Mục 5</a></li>
+ -->
+</ul>
+
+<div style="text-align: right;">
+        <a href="http://localhost/QuanLyNSPB/PHPCODE/login.php" onclick="changeContent(event)">
+            Đăng nhập
+        </a>
+</div>
+
+</body>
+</html>
+
+
+    <!-- 
+    <body>
+    <div style="text-align: right;">
+        <a href="http://localhost/QLNSPB/phpcode/login.php" onclick="changeContent(event)">
+            Đăng nhập
+        </a>
+    </div>
+</body>
+
+ -->
+<script>
+    function changeContent(event) {
+        event.preventDefault();
+        var url = event.target.getAttribute('href');
+        parent.T3.location.href = url;
+    }
+</script>
